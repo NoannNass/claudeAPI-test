@@ -25,9 +25,32 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         h2 {
             color: #666;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #666;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -38,5 +61,40 @@
         <p>This is a simple test page created with Claude.</p>
         <p>This page demonstrates basic HTML structure and includes CSS styling.</p>
     </div>
+    
+    <div class="content">
+        <h2>Our Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Feature 1</h3>
+                <p>Description of our first amazing feature.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Feature 2</h3>
+                <p>Description of our second amazing feature.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Feature 3</h3>
+                <p>Description of our third amazing feature.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>Email: contact@example.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </div>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
